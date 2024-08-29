@@ -76,8 +76,8 @@ const equal = () => {
         default:
             result = decimalFirstValue
     }
-    binaryDiv.textContent = result.toString(2)
-    decimalDiv.textContent = result
+    binaryDiv.textContent = parseInt(result).toString(2)
+    decimalDiv.textContent = parseInt(result)
     binaryCalculator.total = result.toString(2)
     binaryCalculator.operator = ""
     opStatus = true
